@@ -1,0 +1,66 @@
+@-moz-document url-prefix(moz-extension) {
+:root {
+    --grey-30: #d7d7db;
+    --grey-40: #b1b1b3;
+    --grey-50: #737373;
+    --grey-60: #4a4a4f;
+    --grey-80: #2a2a2e;
+    --grey-90: #0c0c0d;
+    --tone-4: var(--grey-40);
+    --tone-5: var(--grey-50);
+    --tone-6: var(--grey-60);
+    /* --tone-8: var(--grey-80);
+    --tone-9: var(--grey-90); */
+    --tone-8:  #002b36;
+    --tone-9:  #061f2f;
+    --blue-50: #0a84ff;
+    --accent-2: var(--blue-50);
+  }
+}
+
+/*! Alters the webextension Vim Vixen
+  IMPORTANT: change the Internal UUID */
+@-moz-document url-prefix("moz-extension://1b03d9da-342b-475b-9286-b65989403d4d/") {
+  .vimvixen-console-command-wrapper {
+    border-top: 1px solid!important
+  }
+  .vimvixen-console-completion-title {
+    background-color: var(--tone-9)!important;
+    border-color: var(--tone-5)!important
+  }
+  .vimvixen-console-completion {
+    background-color: var(--tone-8)!important;
+    color: #b1b1b3!important;
+    font-family: Menlo,monospace!important
+  }
+  .vimvixen-console-command,
+  .vimvixen-console-command-input {
+    background-color: var(--tone-9)!important;
+    color: var(--grey-30)!important
+  }
+  .vimvixen-console-completion-item-url {
+    color: #86de74!important
+  }
+  .vimvixen-console-completion-item.vimvixen-completion-selected {
+    background-color: #44391f!important;
+    color: #fce19f!important
+  }
+  .vimvixen-console-error {
+    background-color: #4b3137!important;
+    color: #ff9494!important
+  }
+  .vimvixen-settings-form,
+  h1 {
+    color: var(--tone-4)!important
+  }
+  .vimvixen-settings-form textarea[name=json] {
+    background-color: var(--tone-6)!important;
+    -moz-appearance: none!important;
+    color: var(--tone-4)!important;
+    border-color: var(--tone-6)
+  }
+  ::-moz-selection {
+    color: var(--grey-30);
+    background: var(--accent-2)
+  }
+}

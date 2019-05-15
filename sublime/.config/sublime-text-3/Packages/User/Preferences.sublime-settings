@@ -1,0 +1,58 @@
+{
+	"added_words":
+	[
+		"προσομοιώσουμε",
+		"αυθεντικοποίηση",
+		"κετρικοποιημένη",
+		"ιστότοπου",
+		"ιστότοπο",
+		"ιστότοπων",
+		"ιστοτόπου",
+		"τροποποιήσιμο"
+	],
+	"color_scheme": "Packages/Solarized Color Scheme/Solarized (dark).sublime-color-scheme",
+	"dictionary": "Packages/Dictionaries/Greek.dic",
+	"enable_hexadecimal_encoding": false,
+	"extra_file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace"
+	],
+	"extra_folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS"
+	],
+	"font_face": "Menlo for Powerline",
+	"font_size": 8,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"rulers":
+	[
+	],
+	"tab_size": 4,
+	"theme": "Sodarized Dark 3.sublime-theme",
+	"translate_tabs_to_spaces": true
+}
