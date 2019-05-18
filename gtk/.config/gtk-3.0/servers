@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="smb://freenas/" added="2018-01-27T14:34:57Z" modified="2018-01-27T14:34:57Z" visited="2018-01-27T14:34:57Z">
+    <title>Windows shares on freenas</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2018-01-27T14:34:57Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="smb://192.168.78.36/" added="2018-08-22T09:22:29Z" modified="2018-08-22T09:22:29Z" visited="2018-08-22T09:22:29Z">
+    <title>Windows shares on 192.168.78.36</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2018-08-22T09:22:29Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="smb://172.16.125.131/documents/" added="2018-09-30T07:51:42Z" modified="2018-09-30T07:51:42Z" visited="2018-09-30T07:51:42Z">
+    <title>documents on 172.16.125.131</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;nautilus %u&apos;" modified="2018-09-30T07:51:42Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

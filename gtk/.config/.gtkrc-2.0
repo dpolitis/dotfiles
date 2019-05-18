@@ -1,0 +1,11 @@
+gtk-can-change-accels = 1
+
+gtk-icon-theme-name = "MATE-Faenza-Dark"
+gtk-theme-name = "Adwaita-dark"
+
+style "user-font"
+{
+        font_name="Source Code Pro 9"
+}
+widget_class "*" style "user-font"
+gtk-font-name = "Source Code Pro 9"
