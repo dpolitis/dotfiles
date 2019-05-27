@@ -2,6 +2,11 @@ set nocompatible              " be iMproved, required
 filetype on		      " required
 filetype off
 
+set background=dark
+colorscheme solarized
+
+nmap <F8> :TagbarToggle<CR>
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -23,6 +28,11 @@ Plugin 'vim-perl/vim-perl'
 Plugin 'vim-python/python-syntax'
 Plugin 'hashivim/vim-terraform'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'majutsushi/tagbar'
+Plugin 'Konfekt/FastFold'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 Plugin 'Shougo/deoplete.nvim'
 if !has('nvim')
@@ -31,7 +41,10 @@ if !has('nvim')
 endif
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neosnippet-snippets'
+
 let g:deoplete#enable_at_startup = 1
+let g:airline_powerline_fonts = 1
+let g:airline_theme='solarized'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
