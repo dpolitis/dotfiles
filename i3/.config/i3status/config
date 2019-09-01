@@ -99,10 +99,17 @@ color=#d70a53
 
 [keyboard]
 label=
-command=if [ $(xset -q|grep LED|awk '{ print $10 }'|sed 's/0//g') -eq 1 ]; then echo -n "gr"; else echo -n "us"; fi
+command=[ $((2#`xset -q|grep LED|awk '{ print $10 }'`)) -eq 8 ] || [ $((2#`xset -q|grep LED|awk '{ print $10 }'`)) -eq 9 ] && echo -n "gr" || echo -n "us"
 markup=pango
 interval=10
 color=#ffffff
+
+[capslockint]
+label=
+command=[ $(xset -q|grep Caps|awk '{ print $4 }') = 'on' ] && echo -n "CAPS" || echo -ne ' ' 
+markup=pango
+interval=10
+color=#d70a53
 
 [separator]
 
@@ -110,5 +117,5 @@ color=#ffffff
 label=
 command=$HOME/.config/i3/scripts/battery.sh
 markup=pango
-interval=30
+interval=60
 

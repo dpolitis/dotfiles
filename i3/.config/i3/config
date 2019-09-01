@@ -248,8 +248,8 @@ bar {
 
 # startup programs
 exec --no-startup-id /usr/libexec/geoclue-2.0/demos/agent
-#exec_always --no-startup-id feh --bg-fill $HOME/.config/i3/derelict.jpg
-exec_always --no-startup-id feh --bg-fill $HOME/.config/i3/retro.jpg
+#exec_always --no-startup-id feh --bg-fill $HOME/Pictures/derelict.jpg
+exec_always --no-startup-id feh --bg-fill $HOME/Pictures/retro.jpg
 #exec --no-startup-id "polybar example"
 exec_always --no-startup-id source $HOME/.config/i3/scripts/keyrring.sh
 exec xautolock -time 5 -locker $HOME/.config/i3/scripts/i3lock.sh
@@ -299,3 +299,8 @@ bindsym XF86AudioPrev exec playerctl previous
 # enable redshift
 exec --no-startup-id redshift
 bindsym $mod+Shift+u exec pkill -USR1 redshift
+
+# shift backspace / backslash
+exec --no-startup-id xmodmap -e "keycode 51 = BackSpace"
+exec --no-startup-id xmodmap -e "keycode 22 = backslash bar"
+exec --no-startup-id xmodmap -e "keycode 66 = Control_L Caps_Lock NoSymbol NoSymbol"
